@@ -1,0 +1,16 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  page_id: 953125641
+  name: VAR1
+  value: MyString
+
+two:
+  page_id: 953125641
+  name: VAR2
+  value: Value 2
+  
+three:
+  page_id: 0
+  name: VAR3
+  value: Add This

@@ -1,0 +1,179 @@
+/*
+This style sheet governs the layout for test pages
+*/
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica,georgia,times,serif;
+	color: #000;
+	background-color: #ddd;
+}
+
+#container{
+	margin: 1em 0; /*setting margin to zero makes this full width*/
+	background-color: #FFF;
+	background-image: url(../images/background.jpg);
+	background-repeat: repeat-y;
+	border: 1px solid #333;
+	
+}
+
+#banner{
+	background-color: #666;
+	border-bottom: 1px solid #333;
+	
+}
+
+#banner h1{
+	margin: 0;
+	padding: .5em;
+}
+
+#banner #form_container{
+	border: 1px solid #F00;
+	height: 10%;
+}
+
+#nav{
+	float: left;
+	width: 160px;
+	margin-left: 10px;
+	padding-top: 1em;
+	clear: both;
+}
+
+#nav p{
+	/*turn off the margins on the first item, this might need to be something
+	 * other than <p>*/
+	margin-top: 0;
+}
+
+#content{
+	/*The left margin of the content div is used to push this block away from
+	 * the nav block on the left side of the page.  That margin value has to be
+	 * slightly larger than the width of the nav container, which also needs to be equal
+	 * to the width of the background image.*/
+	padding-top: 1em;
+	margin: 0 2em 0 200px
+}
+
+.element_div{
+	/*Style the page elements
+	border-top: 1px solid #000;*/
+	/*border-bottom: 1px solid #000;*/
+	margin: 1em 0 1em 0;
+	padding: .5em;
+	clear:both;
+	width: 80%;
+	
+}
+
+#footer{
+	clear:both;
+	background-color: #666;
+	padding: 1em;
+	text-align: right;
+	border-top: 1px solid #333;
+}
+
+#add_heading{
+	
+	float:left;
+	border: 1px solid #000;	
+	width: 80%;
+	margin: 1em .5em 1em 1em;
+	padding: 0em 1em 1em 1em;
+	display: none;
+}
+
+#add_note{
+	
+	float:left;
+	border: 1px solid #000;	
+	width: 80%;
+	margin: 1em .5em 1em .5em;
+	padding: 0em 1em 1em 1em;
+	display: none;
+}
+
+#add_table{
+	
+	float:left;
+	border: 1px solid #000;	
+	width: 80%;
+	margin: 1em .5em 1em .5em;
+	padding: 0em 1em 1em 1em;
+	display: none;
+}
+
+/*
+ * This governs the display of the mouse over areas that will display
+ * the heading, note, and table add forms
+ * 
+ */
+#add_functions{
+	
+	list-style: none;
+	text-align: center;
+	font-size: medium;
+	
+}
+
+#add_functions li{
+	display: inline;
+	margin-left: .5em;
+	color: #FFF;
+	padding: 1em 1em 1em 1em;
+	margin-bottom: 2em;
+	
+}
+
+#close_form{
+    /*This will be used to style the close links on the forms*/
+    display: inline;
+    float: right;
+}
+
+
+
+#middle_li{
+	border-right: 2px solid #000;
+	border-left: 2px solid #000;
+}
+
+/*
+ * Styling for the headings, these are wrapped in spans to enable
+ * in place editing, so the span needs to be styled.
+ */
+.heading_1{
+	font-size: xx-large;
+}
+
+.heading_2{
+	font-size: x-large;
+}
+
+.heading_3{
+	font-size: large;
+}
+
+.heading_4{
+	font-size: medium;
+	font-weight: bold;
+	
+}
+
+
+.heading_5{
+	font-size: medium;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.heading_6{
+	font-size: small;
+	font-weight: bold;
+}
+
+
+

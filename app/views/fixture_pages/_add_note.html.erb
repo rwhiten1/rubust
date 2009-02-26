@@ -1,0 +1,8 @@
+<div id="add_note" onmouseover="displayNoteForm();">
+     <a href="#" id="close_form" onclick="hideNoteForm();">Close</a>
+	<% form_remote_tag(:url => {:action => 'addNote', :id => page.id}, :update => 'elements_list') do%>
+		<label for="note[data]">Text: <%= text_area 'note','data', :rows => 5, :cols=>40 %></label>
+		<%= submit_tag 'Add Note',:onclick => "hideHeadingForm();"%>
+	<%end%>
+
+</div>

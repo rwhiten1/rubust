@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: TestTable1
+  fixture: FixtureClass1
+  rows: 2
+  columns: 3
+  id: 1
+
+two:
+  name: TestTable2
+  fixture: FixtureClass2
+  rows: 3
+  columns: 4
+  id: 2

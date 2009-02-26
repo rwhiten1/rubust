@@ -1,0 +1,34 @@
+<%
+#puts "Element: #{element.resource_type}"
+	table = element.resource
+#use the row and column information in table to loop over it and
+#build an html table
+#	if(table.get_row(0).size == 0)
+%>
+	<!--
+		<%= render :partial => 'blank_table', :locals => {:page => @page, :element => element}%>
+	-->
+<% # else %>
+<!-- style="border-width: 1px 1px 1px 1px; border-style: solid; border-color: #000;" -->
+<div id="fixture_<%= table.id %>" class="element_div">
+<table bordercolor="#000000" border=1 cellspacing=0 cellpadding=0 width="80%">
+	<!-- Put on the table header, this is where the Fixture name will be-->
+	<tr>
+		<td colspan="<%= table.columns %>"><%= table.fixture%></td>
+	</tr>
+		
+<% 
+	0.upto(table.rows - 1) do |i|
+	row = table.get_row(i)
+%>
+	<tr> 
+	<% 
+		row.each do |c|
+	%>
+		<td><%= c.data %></td>
+	<% end #inner loop%>
+	</tr>
+<% end #outer loop%>
+</table>
+</div>
+<% # end%>

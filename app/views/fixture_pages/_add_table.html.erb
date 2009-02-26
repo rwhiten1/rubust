@@ -1,0 +1,11 @@
+<div id="add_table" onmouseover="displayFixtureForm();">
+    <a href="#" id="close_form"onclick="hideFixtureForm();">Close</a>
+	<% form_remote_tag(:url => {:action => 'addTable', :id => page.id}, :update => 'elements_list') do%>
+		<p>Table Name: <%= text_field 'fixture_sheet','name', :size=>15%></p>
+		<p>Fixture Class: <%= text_field 'fixture_sheet','fixture', :size=>15%></p>
+		<p>Rows: <%= text_field 'fixture_sheet','rows', :size=> 10%></p>
+		<p>Columns: <%= text_field 'fixture_sheet','columns', :size=> 10%></p>
+		<%= submit_tag 'Add Table', :onclick => "hideFixtureForm();"%>
+	<%end%>
+
+</div>

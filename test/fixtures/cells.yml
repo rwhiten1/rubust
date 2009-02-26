@@ -1,0 +1,37 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  fixture_sheet_id: 1
+  data: Cell 1
+  row: 0
+  col: 0
+
+two:
+  fixture_sheet_id: 1
+  data: Cell 2
+  row: 0
+  col: 1
+  
+three:
+  fixture_sheet_id: 1
+  data: Cell 3
+  row: 0
+  col: 2
+
+four:
+  fixture_sheet_id: 1
+  data: Cell 4
+  row: 1
+  col: 0
+  
+five:
+  fixture_sheet_id: 1
+  data: Cell 5
+  row: 1
+  col: 1
+  
+#six:
+#  fixture_sheet_id: 1
+#  data: Cell 6
+#  row: 1
+#  col: 2

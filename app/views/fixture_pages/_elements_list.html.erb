@@ -1,0 +1,10 @@
+<!-- loop over the  elements list of @page, render each type -->
+<div id="elements_list">
+<%
+	elements = page.get_element_list
+	elements.each do |el|
+	#puts "resource_type: #{el.resource_type}, Heading Class: #{Heading.class}"
+%>
+	<%= render :partial => el.resource_type.downcase, :locals => {:element => el}%>
+<%	end #this is the end of elements loop%>
+</div

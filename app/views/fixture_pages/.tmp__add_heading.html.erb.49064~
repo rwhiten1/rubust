@@ -1,0 +1,8 @@
+<div id="add_heading">
+	<% form_remote_tag(:url => {:action => 'addHeading', :id => page.id}, :update => 'elements_list') do%>
+		<p>Text: <%= text_field 'heading','value', :size=>20%></p>
+		<p>Size: <%= select('heading','size',[1,2,3,4,5,6])%></p>
+		<%= submit_tag 'Add Heading'%>
+	<%end%>	
+</div>
+	

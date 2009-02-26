@@ -1,0 +1,11 @@
+<h1><%= @page.name%></h1>
+<div id="heading_form">
+	<%= render :partial => 'add_heading', :locals=>{:page => @page}%>
+</div>
+<div id="note_form">
+	
+</div>
+<div id="fixture_form">
+	
+</div>
+<%= render :partial => 'elements_list', :locals=>{:page => @page} %>

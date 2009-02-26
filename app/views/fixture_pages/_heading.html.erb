@@ -1,0 +1,15 @@
+
+<%
+ #puts "Element: #{element.resource_type}"
+ heading = element.resource
+#:load_text_url=>url_for(:action=>"get_heading_value",heading.id)
+ #puts "Heading Size: #{heading.size}"
+ #case heading.size
+#	when 1
+%>
+<div id="heading_<%= heading.id%>" class="element_div">
+
+	<span id="edit_field_<%= heading.id %>" class="heading_<%= heading.size%>"><%= heading.value %></span>
+	<%= in_place_editor "edit_field_#{heading.id}",{:url => url_for({:action => "updateHeading", :id => heading.id})}%>
+    
+</div>

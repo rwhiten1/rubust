@@ -1,0 +1,4 @@
+<% #puts "Element: #{element.resource_type}" %>
+<p>
+	<%= element.resource.data %>
+</p>

@@ -1,0 +1,23 @@
+<%
+	table = element.resource
+%>
+
+<table bordercolor="#000000" border=1 cellspacing=0 cellpadding=0 width="80%">
+			<!-- Put on the table header, this is where the Fixture name will be-->
+			<tr>
+				<td colspan="<%= table.columns + 1 %>"><%= table.fixture%></td>
+			</tr>
+				
+		<% 
+			0.upto(table.rows - 1) do |i|
+			row = table.get_row(i)
+		%>
+			<tr> 
+			<% 
+				row.each do |c|
+			%>
+				<td><%= c.data %></td>
+			<% end #inner loop%>
+			</tr>
+		<% end #outer loop%>
+</table>

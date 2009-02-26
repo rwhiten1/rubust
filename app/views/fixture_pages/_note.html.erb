@@ -1,0 +1,12 @@
+<% #puts "Element: #{element.resource_type}" %>
+<%
+	note = element.resource
+%>
+<div id="note_<%= note.id %>" class="element_div">
+<p>
+	<span id="edit_note_<%= note.id %>"><%= element.resource.data %></span>
+	<%=
+		in_place_editor "edit_note_#{note.id}",{:url=> url_for({:action=>"updateNote", :id =>note.id} ), :rows=>5, :cols=>40}
+	%>
+</p>
+</div>

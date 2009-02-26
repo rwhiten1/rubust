@@ -1,0 +1,25 @@
+<%
+puts "Element: #{element.resource_type}"
+	table = element.resource
+#use the row and column information in table to loop over it and
+#build an html table
+x=0
+y=0
+%>
+<!-- style="border-width: 1px 1px 1px 1px; border-style: solid; border-color: #000;" -->
+<table bordercolor="#000000" border=1 cellspacing=0 cellpadding=0>
+<% while(x < table.rows)
+	x+=1
+	y=0
+	#puts "ROW: #{x}"
+%>
+	<tr> 
+	<% while(y < table.columns)
+		y+=1	
+		#puts "COL: #{y}"
+	%>
+		<td>blank (<%= x %>, <%= y %>)</td>
+	<% end #inner loop%>
+	</tr>
+<% end #outer loop%>
+</table>

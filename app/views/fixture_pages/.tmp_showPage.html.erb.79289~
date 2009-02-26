@@ -1,0 +1,35 @@
+<div id="container">
+	<div id="banner">
+		<h1><%= @page.name%></h1>
+		<ul id="add_functions">
+			<li onmouseover="javascript:displayHeadingForm();">Add Heading</li>
+			<li id="middle_li" onmouseover="javascript:displayNoteForm();">Add Note</li>
+			<li onmouseover="javascript:displayFixtureForm();">Add Blank Table</li>
+		</ul>
+	</div> <!-- END of banner -->
+
+	<div id="nav">
+		<p>Lorem Ipsum</p>
+		<ul>
+			<li>Fixture table 1</li>
+			<li>Fixture table 1</li>
+			<li>Fixture table 1</li>
+			<li>Fixture table 1</li>
+			<li>Fixture table 1</li>
+		</ul>
+	</div> <!-- END of nav -->
+	
+	<div id="content">
+		
+			<%= render :partial => 'add_heading', :locals=>{:page => @page}%>
+			<%= render :partial => 'add_note', :locals=>{:page => @page}%>
+			<%= render :partial => 'add_table', :locals=>{:page => @page}%>
+		
+		<%= render :partial => 'elements_list', :locals=>{:page => @page} %>
+	</div> <!-- END of content -->
+	
+	<div id="footer">
+		<p>Footer stuff will go here</p>
+	</div>
+
+</div> <!-- END of container-->

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  value: Heading 1
+  size: 1
+
+two:
+  value: Heading 2
+  size: 2
+  
+two:
+  value: Heading 3
+  size: 3

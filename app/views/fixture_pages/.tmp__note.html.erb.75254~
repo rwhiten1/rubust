@@ -1,0 +1,6 @@
+<% #puts "Element: #{element.resource_type}" %>
+<div id="note_<%= element.resource.id %>" class="element_div">
+<p>
+	<%= element.resource.data %>
+</p>
+</div>
